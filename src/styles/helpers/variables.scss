@@ -1,0 +1,21 @@
+//---------------------------------------------z-index
+$z-index: (
+	cursor: 111,
+	popup: 110,
+	header: 100,
+	footer: 100,
+	blogPopup: 99,
+);
+//---------------------------------------------z-index###
+
+//---------------------------------------------breakpoints
+$desktop: 1440px;
+$desktop_min: 1200px;
+$tablet_max: 1024px;
+$tablet_min: 768px;
+$mobile: 375px;
+//---------------------------------------------breakpoints###
+
+$base_font_size: 1.4rem;
+$page_width: 100%;
+$base-ease: cubic-bezier(0.28, 0, 0.49, 1);

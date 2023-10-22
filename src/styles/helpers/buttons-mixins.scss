@@ -1,0 +1,91 @@
+@mixin st_btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
+	white-space: nowrap;
+	font-family: var(--telegraf-font);
+	cursor: pointer;
+
+	&[type='submit'] {
+		@include appearance(none);
+	}
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+}
+
+// variants
+@mixin btn_style_primary {
+	@include st_btn;
+
+	font-weight: 500;
+	color: var(--content-primary);
+	border: 1px solid var(--content-primary);
+	background-color: transparent;
+
+	transition: all 0.3s ease;
+
+	&:hover,
+	&:focus {
+		background-color: var(--content-primary);
+		color: var(--background-01);
+	}
+}
+
+@mixin btn_style_secondary {
+	@include st_btn;
+
+	font-weight: 500;
+	color: var(--background-01);
+	border: 1px solid var(--background-01);
+	background-color: transparent;
+
+	transition: color 0.3s ease;
+
+	&:hover,
+	&:focus {
+		color: var(--light);
+	}
+}
+
+@mixin btn_style_thirdly {
+	@include st_btn;
+
+	font-weight: 500;
+	color: var(--background-00);
+	border: 1px solid var(--background-brand-dark);
+	background-color: var(--background-brand-dark);
+
+	transition:
+		color 0.3s ease,
+		background-color 0.3s ease;
+
+	&:hover,
+	&:focus {
+		color: var(--background-brand-dark);
+		background-color: transparent;
+	}
+}
+
+// sizes
+@mixin btn_size_base {
+	height: 4rem;
+	padding: 0 1.2rem;
+	border-radius: 4.4rem;
+
+	font-size: 1.6rem;
+	line-height: 4rem;
+}
+
+@mixin btn_size_lg {
+	height: 5.6rem;
+	padding: 0 2rem;
+	border-radius: 4.4rem;
+
+	font-size: 2rem;
+	line-height: 1.25;
+}

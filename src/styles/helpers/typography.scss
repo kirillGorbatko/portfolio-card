@@ -1,0 +1,101 @@
+@mixin h0 {
+	font-size: 9.6rem;
+	font-weight: 500;
+	line-height: 1.1;
+}
+
+@mixin h1 {
+	font-size: 7.2rem;
+	font-weight: 500;
+	line-height: 1.11;
+}
+
+@mixin h2 {
+	font-size: 6rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+@mixin h3 {
+	font-size: 4.8rem;
+	font-weight: 500;
+	line-height: 1.17;
+}
+
+@mixin h4 {
+	font-size: 3.6rem;
+	font-weight: 500;
+	line-height: 1.23;
+}
+
+@mixin h5 {
+	font-size: 2.8rem;
+	font-weight: 500;
+	line-height: 1.28;
+}
+
+@mixin h6 {
+	font-size: 2.4rem;
+	font-weight: 500;
+	line-height: 1.25;
+}
+
+@mixin title-bold {
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+@mixin title-medium {
+	font-size: 2rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+@mixin p1-medium {
+	font-size: 1.8rem;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+@mixin p2-regular {
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+@mixin p2-medium {
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+@mixin p3-regular {
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1.25;
+}
+
+@mixin p3-medium {
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.25;
+}
+
+@mixin caption-lg {
+	font-size: 1.8rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+@mixin caption-md {
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.22;
+}
+
+@mixin caption-sm {
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.6;
+}
