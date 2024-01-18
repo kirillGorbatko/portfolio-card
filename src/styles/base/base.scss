@@ -7,10 +7,16 @@
 
 	--light: #fff;
 	--dark: #000;
-	--primary-color: #09182d;
-	--secondary-color: #e1473d;
-	--teritary-color: #f4f4f4;
-	--quaternary-color: #929292;
+
+	--color-bg: #111315;
+	--color-bg-secondary: #D7D7D7;
+	--color-text: #fff;
+	--invert-color: #111315;
+
+	// --primary-color: #09182d;
+	// --secondary-color: #e1473d;
+	// --teritary-color: #f4f4f4;
+	// --quaternary-color: #929292;
 
 	--height-footer: 10rem;
 
@@ -30,7 +36,7 @@
 html {
 	height: 100%;
 
-	font-family: var(--telegraf-font);
+	font-family: var(--default-font);
 	font-weight: 400;
 	line-height: 1.33;
 	font-size: 10px;
@@ -43,9 +49,8 @@ body {
 	height: 100%;
 
 	font-size: 1.6rem;
-	color: var(--dark);
-
-	background-color: #f5f5f5;
+	color: var(--color-text);
+	background-color: var(--color-bg);
 
 	-webkit-text-size-adjust: none;
 	-webkit-font-smoothing: antialiased;

@@ -1,0 +1,49 @@
+@import '@/styles/helpers/helpers-all.scss';
+
+.button {
+	position: relative;
+
+	@include st_btn;
+}
+
+.inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+
+	@include btn_size_base;
+
+	transition: transform .5s ease, opacity .5s ease;
+
+	&.front {
+		@include btn_style_primary;
+	}
+
+	&.back {
+		@include btn_style_secondary;
+
+		position: absolute;
+		left: 0;
+
+		width: 100%;
+
+		opacity: 0;
+		transform: translateY(-50%) rotateX(90deg);
+	}
+
+	.button:hover &,
+	.button:focus & {
+		&.back {
+			opacity: 1;
+			transform: translateY(0) rotateX(0);
+
+		}
+
+		&.front {
+			opacity: 0;
+			transform: translateY(50%) rotateX(90deg);
+
+		}
+	}
+}

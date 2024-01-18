@@ -1,0 +1,12 @@
+$indent_x: 2.6rem;
+$indent_y: 2.6rem;
+
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 calc($indent_x * -1) calc($indent_y * -1) 0;
+}
+
+.item {
+	padding: 0 $indent_x $indent_y 0;
+}
